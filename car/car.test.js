@@ -34,9 +34,15 @@ describe('Car class test', () => {
             expect(car).toHaveProperty('odometer');
             expect(car.odometer).toBe(0);
             
-            car.drive(10)
+            car.drive(10);
 
             expect(car.odometer).toBe(10);
-        })
+        });
+
+
+        test('driveAsync() method', () => {
+            car.driveAsync(10);
+            expect(car.odometer).toBe(10);
+        });
     })
 });
