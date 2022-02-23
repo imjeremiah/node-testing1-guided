@@ -10,5 +10,6 @@ describe('sanity check', () => {
         expect({}).not.toBe({});
         expect({}).toEqual({});
         expect({ a: 1 }).toEqual({ a: 1 });
+        expect({ a: 1 }).not.toEqual({ a: 2 });
     })
 });
