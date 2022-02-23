@@ -22,11 +22,9 @@ class Car {
 }
 
 
-const p = new Promise((resolve) => {
-    resolve();
-});
-
-p.then()
+// let car = new Car('Tesla', 'Model S');
+// car.driveAsync()
+//     .then(() => {})
 
 
 module.exports = Car
