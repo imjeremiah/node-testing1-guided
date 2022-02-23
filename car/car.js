@@ -2,7 +2,7 @@ class Car {
     constructor(make, model) {
         this.make = make;
         this.model = model;
-        this.odometer = 7;
+        this.odometer = 0;
     }
 
     drive() {

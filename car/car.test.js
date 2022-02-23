@@ -32,7 +32,6 @@ describe('Car class test', () => {
             expect(car.drive).toBeInstanceOf(Function);
 
             expect(car).toHaveProperty('odometer');
-            expect(car.odometer).toBeInstanceOf(Number);
             expect(car.odometer).toBe(0);
             
             car.drive(10)
