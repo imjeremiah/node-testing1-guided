@@ -22,10 +22,11 @@ class Car {
 }
 
 
+const p = new Promise((resolve) => {
+    resolve();
+});
 
-setTimeout(() => {
-    console.log('hello');
-}, 1000);
+p.then()
 
 
 module.exports = Car
