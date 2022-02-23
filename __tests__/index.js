@@ -7,7 +7,7 @@ describe('sanity check', () => {
         expect(17).toBe(17);
         expect(17).toEqual(17);
         
-        // {} == {}
-        expect({}).toBe({});
+        expect({}).not.toBe({});
+        expect({}).toEqual({});
     })
 });
