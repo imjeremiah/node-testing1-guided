@@ -21,4 +21,11 @@ class Car {
     }
 }
 
+
+
+setTimeout(() => {
+    console.log('hello');
+}, 1000);
+
+
 module.exports = Car
