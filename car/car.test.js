@@ -30,6 +30,14 @@ describe('Car class test', () => {
 
             // car.drive.constructor = Function
             expect(car.drive).toBeInstanceOf(Function);
+
+            expect(car).toHaveProperty('odometer');
+            expect(car.odometer).toBeInstanceOf(Number);
+            expect(car.odometer).toBe(0);
+            
+            car.drive(10)
+
+            expect(car.odometer).toBe(10);
         })
     })
 });
