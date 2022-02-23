@@ -20,11 +20,15 @@ describe('Car class test', () => {
         // expect(car.model).toBe('prius');
         expect(car).toHaveProperty('make', 'toyota')
         expect(car).toHaveProperty('model', 'prius')
+        expect(car.model).toBeInstanceOf(String)
     });
 
     describe('Car can drive', () => {
         test('drive() method', () => {
+            // car.drive exists
             expect(car).toHaveProperty('drive');
+
+            // car.drive.constructor = Function
             expect(car.drive).toBeInstanceOf(Function);
         })
     })
