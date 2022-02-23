@@ -5,8 +5,10 @@ class Car {
         this.odometer = 0;
     }
 
-    drive(distance) {
-        this.odometer += distance;
+    drive(...distance) {
+        for(d of distance) {
+            this.odometer += d;
+        }
     }
 
     driveAsync(distance) {
