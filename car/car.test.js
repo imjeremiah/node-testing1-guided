@@ -16,7 +16,9 @@ describe('Car class test', () => {
     });
 
     test('Car make & model', () => {
-        expect(car.make).toBe('toyota');
-        expect(car.model).toBe('prius');
+        // expect(car.make).toBe('toyota');
+        // expect(car.model).toBe('prius');
+        expect(car).toHaveProperty('make', 'toyota')
+        expect(car).toHaveProperty('model_____', 'prius')
     });
 });
