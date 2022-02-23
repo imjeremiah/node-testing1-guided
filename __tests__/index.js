@@ -1,5 +1,10 @@
 describe('sanity check', () => {
     test('make sure math still works', () => {
-        expect(5+5).toBe(10);
+        expect(5 + 5).toBe(10);
+    });
+
+    test('toBe vs. toEqual', () => {
+        expect(17).toBe(17);
+        expect(17).toEqual(17);
     })
 });
