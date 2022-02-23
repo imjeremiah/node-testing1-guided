@@ -1,6 +1,6 @@
 class Car {
     constructor(make, model) {
-        this.makee = make.toUpperCase();
+        this.make = make;
         this.model = model;
     }
 }
