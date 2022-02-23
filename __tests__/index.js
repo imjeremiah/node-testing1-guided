@@ -6,5 +6,8 @@ describe('sanity check', () => {
     test('toBe vs. toEqual', () => {
         expect(17).toBe(17);
         expect(17).toEqual(17);
+        
+        // {} == {}
+        expect({}).toBe({});
     })
 });
