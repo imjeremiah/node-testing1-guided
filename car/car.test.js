@@ -6,7 +6,7 @@ describe('Car class test', () => {
     });
 
     test('Car constructor', () => {
-        let car = Car('toyota', 'prius');
+        let car = new Car('toyota', 'prius');
         expect(car).toBeInstanceOf(Car);
-    })
+    });
 });
