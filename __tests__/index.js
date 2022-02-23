@@ -24,5 +24,6 @@ describe('sanity check', () => {
 describe('more jest features', () => {
     test('object comparisons', () => {
         expect({ a: 1 }).toEqual({ a: 1 });
+        expect({ a: 1 }).toEqual({ a: 1, b: 2 });
     });
 });
