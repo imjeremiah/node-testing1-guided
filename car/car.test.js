@@ -43,6 +43,6 @@ describe('Car class test', () => {
         test('driveAsync() method', async () => {
             await car.driveAsync(10);
             expect(car.odometer).toBe(10);
-        }, 6000);
+        }, 1000);
     })
 });

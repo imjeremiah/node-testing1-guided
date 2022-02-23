@@ -6,7 +6,7 @@ class Car {
     }
 
     drive(...distance) {
-        for(d of distance) {
+        for(let d of distance) {
             this.odometer += d;
         }
     }
@@ -16,7 +16,7 @@ class Car {
             setTimeout(() => {
                 this.odometer += distance;
                 resolve();
-            }, 500 * distance);
+            }, 5 * distance);
         });
     }
 }
